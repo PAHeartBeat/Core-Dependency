@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net5.0;net6.0;net7.0</TargetFrameworks>
+    <LangVersion>10</LangVersion>
+    <OutputType>library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Analyzer Setting">
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Label="ReadyToRun Settings">
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishReadyToRunEmitSymbols>true</PublishReadyToRunEmitSymbols>
+    <PublishReadyToRunComposite Condition="'$(SelfContained)' == true">true</PublishReadyToRunComposite>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Trimming Setting" Condition="'$(SelfContained)' == 'true'">
+    <PublishTrimmed>true</PublishTrimmed>
+    <IsTrimmable>true</IsTrimmable>
+    <TrimMode>link</TrimMode> <!-- copyused, link-->
+  </PropertyGroup>
+
+  <PropertyGroup Label="NuGet Pacakge Settings">
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageVersion>1.0.0</PackageVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Debug and Exception Setting">
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <Optimize>true</Optimize>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <IncludeSymbols>true</IncludeSymbols>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Author and Copyright">
+    <Authors>Ankur Ranpariya</Authors>
+    <Copyright>@2021</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Project Meta and settings.">
+    <Product>C# Extenstion for Unity using .Net Framework 4.8</Product>
+    <PackageId>iPAHeartBeat.Core.Dependency</PackageId>
+    <PackageTags>C#, Dependency, Object Reusability.</PackageTags>
+    <Description>This Package is created to provide very low leve Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system..</Description>
+
+    <RootNamespace>iPAHeartBeat.Core</RootNamespace>
+    <AssemblyName>$(PackageId)-$(TargetFramework)</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Project Git Info">
+    <PackageProjectUrl/>
+    <RepositoryUrl>https://github.com/PAHeartBeat/Core-Dependency</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'"/>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'"/>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove=".editorconfig"/>
+    <None Include=".editorconfig"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.md" Pack="true" PackagePath=""/>
+    <None Include="README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+</Project>
