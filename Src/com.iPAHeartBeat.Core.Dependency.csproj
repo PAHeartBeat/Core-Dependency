@@ -51,7 +51,7 @@
     <Product>C# Extenstion for Unity using .Net Framework 4.8</Product>
     <PackageId>iPAHeartBeat.Core.Dependency</PackageId>
     <PackageTags>C#, Dependency, Object Reusability.</PackageTags>
-    <Description>This Package is created to provide very low leve Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system..</Description>
+    <Description>This Package is created to provide very low leve Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system.</Description>
 
     <RootNamespace>iPAHeartBeat.Core</RootNamespace>
     <AssemblyName>$(PackageId)-$(TargetFramework)</AssemblyName>
