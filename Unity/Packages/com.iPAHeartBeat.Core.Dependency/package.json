@@ -1,0 +1,30 @@
+{
+	"name": "com.ipaheartbeat.core.dependency",
+	"version": "1.0.0",
+	"displayName": "Core Dependency",
+	"description": "This Package is created to provide very low leve Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system",
+	"license": "LGPL-3.0-or-later",
+	"unity": "2017.1",
+	"dependencies": {},
+	"keywords": [
+		"Core",
+		"Dependency",
+		"Unity",
+		"iPAHeartBeat",
+		"public"
+	],
+	"author": {
+		"name": "Ankur Ranpariya",
+		"email": "ankur30884@gmail.com"
+	},
+	"samples": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PAHeartBeat/Core-Dependency"
+	},
+	"bugs": {
+		"url": "https://github.com/PAHeartBeat/Core-Dependency/issues",
+		"email": "ankur30884@gmail.com"
+	},
+	"type": "library"
+}
