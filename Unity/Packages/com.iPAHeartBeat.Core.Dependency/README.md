@@ -2,7 +2,7 @@
 This Package is created to provide very low level Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system.
 
 * [Change Log](CHANGELOG.md)
-* [UPM Package License](LICENCE.md)
+* [License](LICENCE.md)
 
 ## Unity Package
 Unity Package is based on .Net Framework 4.71 and C# 10.
@@ -46,11 +46,3 @@ Add this information to you Unity manifest.json file. There is two way to setup 
 8. Now you are ready to use the packages created by Me.
 
 Once you have setup the registry in unity project you can find the packages in Unity Package manger, from "My Registry" option.
-
-## C# Project
-The main C# project used multiple target framework like .NetFramework 4.8, .NET 5.0, .NET 6.0
-
-## NuGet Package.
-I have also deployed NuGet packages to Nuget.org so same system you can use for Non-Unity .NET Projects. NuGet package are supported for multiple .NET Framework.
-## Issues
-Please report issue or feature request in Issue section of repo in github. I will try fix issues ASAP and feature request I can't say now, but Post there so I can track.
