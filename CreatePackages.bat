@@ -9,11 +9,16 @@ dotnet pack Src/. --include-symbols --force -c Release --output ./Packages/NuGet
 @REM Creating Unity NPM Project
 ECHO Step 1: Publishing Code for Unity Package
 set location=com.iPAHeartBeat.Core.Dependency
-dotnet publish Src/%location%.csproj -c Release --no-dependencies --framework net48 --output ./Unity/Packages/%location%/Runtime/.
+dotnet publish Src/%location%.csproj -c Release --no-dependencies --framework net471 --output ./Unity/Packages/%location%/Runtime/.
 
-@REM Removing Extra DLL for Which Code Will avaialble via Unity package registries.
-ECHO Step 2: Removing Extra DLLs
-del Unity/Packages/%location%/Runtime/Newtonsoft.Json.dll
+@REM @REM Removing Extra DLL for Which Code Will avaialble via Unity package registries.
+@REM ECHO Step 2: Removing Extra DLLs
+@REM cd Unity/Packages/%location%/Runtime
+@REM del Newtonsoft.Json.dll
+@REM cd..
+@REM cd..
+@REM cd..
+@REM cd..
 
 @REM Create Node package for Unity
 ECHO Step 3: Creating Node Package for Unity Pacakge Manger.
