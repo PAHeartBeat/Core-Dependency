@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c843ebcf44c6a6e47ac8c6758371d392
+guid: 9a34dcedc7d7d624b886c60ca2965676
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -82,7 +82,7 @@ PluginImporter:
         DontProcess: false
         PlaceholderPath: 
         SDK: AnySDK
-        ScriptingBackend: Il2Cpp
+        ScriptingBackend: AnyScriptingBackend
   - first:
       iPhone: iOS
     second:
