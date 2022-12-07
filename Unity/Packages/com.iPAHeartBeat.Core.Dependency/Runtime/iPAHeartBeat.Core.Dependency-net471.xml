@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>iPAHeartBeat.Core.Dependency-net48</name>
+        <name>iPAHeartBeat.Core.Dependency-net471</name>
     </assembly>
     <members>
         <member name="T:iPAHeartBeat.Core.Dependency.DependencyResolver">
