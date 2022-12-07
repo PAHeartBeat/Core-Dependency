@@ -1,20 +1,3 @@
-# Visual Studio generated #
-# ----------------------- #
-.vs/*
-
-!*.csproj
-!*.sln
-
-*.VC.db
-.consulo/
-*.svd
-*.pidb
-*.suo
-*.user
-*.tmp
-
-# -----------------------------------------
-
 # Target Build Files #
 # ------------------ #
 /[Bb]uilds
@@ -62,12 +45,6 @@ $RECYCLE.BIN/
 .Trash-*
 .nfs*
 # -----------------------------------------
-
-# User-specific files
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

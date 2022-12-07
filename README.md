@@ -1,10 +1,11 @@
 # iPAHeartbeat-Core-Dependency
-C# Dependency Resolution System for Unity and non-unity project.
+This Package is created to provide very low level Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system.
 
 * [Change Log](CHANGELOG.md)
-* [UPM Package License](Pacakges/com.iPAHeartBeat.Core.Dependency/LICENCE.md)
+* [UPM Package License](LICENCE.md)
+
 ## Unity Package
-Unity Package is based on .Net Framework 4.8 and C# 10.
+Unity Package is based on .Net Framework 4.71 and C# 10.
 
 Note:
 - Recently I have configure Unity Packages to Cloud Smith IO. Now any-one can use this package to their unity project
