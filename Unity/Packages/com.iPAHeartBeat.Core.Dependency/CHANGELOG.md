@@ -1,3 +1,7 @@
+## 2.0.1
+### Breaking Changes
+- DLL file name is changed, please revisit assignment of the DLL reference.
+
 ## 2.0.0
 ### Changes
 - Added Multiline comments in code for Partial Open Source Info.
