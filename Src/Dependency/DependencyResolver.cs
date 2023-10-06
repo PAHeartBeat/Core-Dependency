@@ -5,15 +5,15 @@
 // --------------------------------------------------------------------------------
 
 /*
-Author:			Ankur Ranpariya {iPAHeartBeat}
-EMail:			ankur30884@gmail.com
-Copyright:		(c) 2017, Ankur Ranpariya {iPAHeartBeat}
-Social:			@iPAHeartBeat,
-GitHubL			https://www.github.com/PAHeartBeat
+Author:				Ankur Ranpariya {iPAHeartBeat}
+EMail:				ankur30884@gmail.com
+Copyright:			(c) 2017, Ankur Ranpariya {iPAHeartBeat}
+Social:				@iPAHeartBeat,
+GitHub:				https://www.github.com/PAHeartBeat
 
 Original Source:	N/A
-Last Modified: 	Ankur Ranpariya
-Contributed By:	N/A
+Last Modified: 		Ankur Ranpariya
+Contributed By:		N/A
 
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
@@ -47,7 +47,8 @@ namespace iPAHeartBeat.Core.Dependency;
 /// <summary>
 /// This class will helper system to provide instance of the type to reuse, it's a kind of singleton system. but It might provides the options do variance implementation of the type by changing a single location.
 /// </summary>
-public static class DependencyResolver {
+public static class DependencyResolver
+{
 	/// <summary>
 	/// Local collection of the the Types which are are registered without its instance.
 	/// </summary>
@@ -94,13 +95,16 @@ public static class DependencyResolver {
 	/// The Service to remove type from the reuse via this system.
 	/// </summary>
 	/// <typeparam name="T">The Type which need to remove from re-use via the system.</typeparam>
-	public static void Unregister<T>() {
+	public static void Unregister<T>()
+	{
 		var t = typeof(T);
-		if (_instances.ContainsKey(t)) {
+		if (_instances.ContainsKey(t))
+		{
 			_ = _instances.Remove(t);
 		}
 
-		if (_types.ContainsKey(t)) {
+		if (_types.ContainsKey(t))
+		{
 			_ = _types.Remove(t);
 		}
 	}
@@ -110,12 +114,17 @@ public static class DependencyResolver {
 	/// </summary>
 	/// <param name="type">The type for which we need to find instance object.</param>
 	/// <returns>The Instance object of the type.</returns>
-	private static object Resolve(Type type) {
+	private static object Resolve(Type type)
+	{
 		object instance = null;
-		if (_instances.ContainsKey(type)) {
+		if (_instances.ContainsKey(type))
+		{
 			instance = _instances[type];
-		} else {
-			if (_types.TryGetValue(type, out var value)) {
+		}
+		else
+		{
+			if (_types.TryGetValue(type, out var value))
+			{
 				var defaultConstructor = value.GetConstructors()[0];
 				var defaultParams = defaultConstructor.GetParameters();
 				var parameters = defaultParams.Select(param => Resolve(param.ParameterType)).ToArray();
