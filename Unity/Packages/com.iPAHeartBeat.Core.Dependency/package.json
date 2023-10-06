@@ -1,6 +1,6 @@
 {
 	"name": "com.ipaheartbeat.core.dependency",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"displayName": "Core Dependency",
 	"description": "This Package is created to provide very low level Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system.",
 	"license": "LGPL-3.0-or-later",
