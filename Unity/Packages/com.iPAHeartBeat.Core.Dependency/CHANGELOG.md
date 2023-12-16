@@ -1,3 +1,10 @@
+## 2.0.2 (2023.12.15)
+- NuGet
+  - No Change Just Version bump
+- UnityNPM
+  - Version bump
+  - Fixe unity Meta file issue.
+
 ## 2.0.1
 ### Breaking Changes
 - DLL file name is changed, please revisit assignment of the DLL reference.

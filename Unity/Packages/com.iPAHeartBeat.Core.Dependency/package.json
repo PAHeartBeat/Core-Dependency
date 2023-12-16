@@ -1,30 +1,30 @@
 {
-	"name": "com.ipaheartbeat.core.dependency",
-	"version": "2.0.1",
-	"displayName": "Core Dependency",
-	"description": "Introducing the Dependency Management Package\n\nThis package is designed to offer a fundamental dependency management system. It allows you to efficiently reuse various types or objects by maintaining just one instance of each. Think of it as a simplified form of a singleton system.\n\nIn simpler terms, this package helps you manage and share important pieces of code, making your programming tasks more efficient and organized. Whether you're a beginner or an experienced coder, it's a valuable tool for enhancing your projects.",
-	"license": "LGPL-3.0-or-later",
-	"unity": "2017.1",
-	"dependencies": {},
-	"keywords": [
-		"Core",
-		"Dependency",
-		"Unity",
-		"iPAHeartBeat",
-		"public"
-	],
-	"author": {
-		"name": "Ankur Ranpariya",
-		"email": "ankur30884@gmail.com"
-	},
-	"samples": [],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/PAHeartBeat/Core-Dependency"
-	},
-	"bugs": {
-		"url": "https://github.com/PAHeartBeat/Core-Dependency/issues",
-		"email": "ankur30884@gmail.com"
-	},
-	"type": "library"
+  "name": "com.ipaheartbeat.core.dependency",
+  "version": "2.0.2",
+  "displayName": "Core Dependency",
+  "description": "Introducing the Dependency Management Package\n\nThis package is designed to offer a fundamental dependency management system. It allows you to efficiently reuse various types or objects by maintaining just one instance of each. Think of it as a simplified form of a singleton system.\n\nIn simpler terms, this package helps you manage and share important pieces of code, making your programming tasks more efficient and organized. Whether you're a beginner or an experienced coder, it's a valuable tool for enhancing your projects.",
+  "license": "LGPL-3.0-or-later",
+  "unity": "2017.1",
+  "dependencies": {},
+  "keywords": [
+    "Core",
+    "Dependency",
+    "Unity",
+    "iPAHeartBeat",
+    "public"
+  ],
+  "author": {
+    "name": "Ankur Ranpariya",
+    "email": "ankur30884@gmail.com"
+  },
+  "samples": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PAHeartBeat/Core-Dependency"
+  },
+  "bugs": {
+    "url": "https://github.com/PAHeartBeat/Core-Dependency/issues",
+    "email": "ankur30884@gmail.com"
+  },
+  "type": "library"
 }

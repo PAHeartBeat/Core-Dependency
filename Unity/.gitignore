@@ -40,7 +40,7 @@ sysinfo.txt
 
 #Mono Project Files
 *.pidb
-*.pdb
+!*.pdb
 *.resources
 test-results/
 # ---------------------------------------

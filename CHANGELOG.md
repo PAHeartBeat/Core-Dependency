@@ -1,3 +1,16 @@
+## 2.0.2 (2023.12.15)
+- NuGet
+  - No Change Just Version bump
+- UnityNPM
+  - Version bump
+  - Fixe unity Meta file issue.
+## 2.0.1
+- NuGet
+  - No Change just version bump.
+- Unity NPM
+  - Version bump
+  - Package Runtime DLL w/o prefix of platform
+
 ## 2.0.0
 ### Changes
 - Added Multiline comments in code for Partial Open Source Info.
